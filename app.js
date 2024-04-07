@@ -4,20 +4,6 @@ const datosBici = require('./datosBici');
 const dhBici = {
     bicicletas : datosBici(),
     buscarBici : function (id) {
-       /*  const resultado = this.bicicletas.filter((bici) => {
-            return bici.id === id
-        }); */
-        //const bici2 = this.bicicletas.filter((bici) => bici.id === id)
-
-       /*  if(resultado.length === 0){
-            return null
-        }else {
-            return resultado
-        } */
-        
-        //return resultado.length === 0 ? null : resultado
-
-        //return resultado.length ? resultado : null
 
         const resultado = this.bicicletas.find((bici) => {
             return bici.id === id
@@ -78,5 +64,3 @@ const dhBici = {
 
 console.log(dhBici.buscarBici(1))
 
-
-//module.exports = dhBici
